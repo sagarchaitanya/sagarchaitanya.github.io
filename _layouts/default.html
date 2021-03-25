@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+<!-- Head layout-->
+{%- include head.html -%}
+
+<body>
+    <div class="container-fluid">
+
+        <!-- Header layout-->
+        {%- include header.html -%}
+
+        <div class="col-lg-12">
+            {{ content }}
+        </div>
+
+        <!-- Footer layout-->
+        {%- include footer.html -%}
+
+    </div>
+</body>
+
+</html>
